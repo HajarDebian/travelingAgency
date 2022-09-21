@@ -1,0 +1,825 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@700&family=Inter:wght@300;500&family=Mr+Dafoe&family=Ms+Madi&family=Rubik:wght@700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/jmh-sindbad');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+}
+.main{
+    overflow: hidden;
+}
+
+/*..............................NAVBAR..............................*/
+
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    z-index: 99999;
+}
+.logo{
+    width:300px;
+    font-family: 'JMH Sindbad', sans-serif;
+}
+nav ul{ 
+    list-style: none;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav ul li{
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+nav ul li a , nav h1{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+nav h1{
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 60px;
+}
+
+/*..............................HOME..............................*/
+
+header{
+    height: 90vh;
+    background: url(../images/b1.jpg) center/cover;
+    position: relative;
+    overflow: hidden;
+}
+.headerstuff{
+    transform: translate(-15%,75%);
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.orangeborder{
+    border: 3px solid rgb(255, 217, 0);
+    width: 300px;
+    height: 200px;
+    margin: auto;
+}
+.headercontent{
+    background-color: rgba(255, 255, 255, 0.801);
+    height: 120px;
+    width: 310px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    padding-top: 20px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+}
+.headercontent h3{
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-family: 'JMH Sindbad', sans-serif;
+}
+.headercontent h2{
+    color: rgb(74, 180, 115);
+    font-size: 30px;
+}
+
+/*..............................ABOUT..............................*/
+
+#About{
+    width: 100%;
+    height: 50vh;
+    margin-top: 80px;
+    overflow: hidden;
+}
+.cards{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.card{
+    cursor: pointer;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+    perspective: 600px;
+}
+.card .cardinfo{
+    position: absolute;
+    text-align: left;
+    padding: 5px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.card .cardinfo h5{
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'JMH Sindbad', sans-serif;
+}
+.card .cardinfo h4{
+    color: rgb(255, 196, 0);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.card .cardinfo p{
+    font-size: 15px;
+    font-weight: 100;
+    color: grey;
+}
+.cardinllustration{
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 80%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.cardinllustration1{
+    background: url(../images/g2.jpg) no-repeat center/100% 100%;
+}
+.cardinllustration2{
+    background: url(../images/g3.jpg) no-repeat center/100% 100%;
+}
+.cardinllustration3{
+    background: url(../images/g5.jpg) no-repeat center/100% 100%;
+}
+.cardinllustration4{
+    background: url(../images/g4.jpg) no-repeat center/100% 100%;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+/*..............................FIND ADVENTURE..............................*/
+
+.find{
+    background: url(../images/b3.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.fonted{
+    font-family: 'JMH Sindbad', sans-serif;
+}
+.find h4{
+    color: white;
+    font-weight: 400;
+    margin-top: 40px;
+}
+.find h3{
+    color: rgb(255, 196, 0);
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 8px;
+}
+.adtypes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+.adtype{
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.adtype:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.adtype i{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.adtype h4{
+    color: rgb(255, 196, 0);
+    margin-top: 0;
+}
+
+/*..............................SERVICES..............................*/
+
+#Services{
+    width: 70%;
+    height: 80vh;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 100px;
+}
+.title{
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 8px;
+    color: rgb(255, 196, 0);
+    text-align: center;
+}
+#Services h4{
+    font-weight: 400;
+    text-align: center;
+    font-family: 'JMH Sindbad', sans-serif;
+}
+.services{
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.servicesrow1 , .servicesrow2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.service{
+    width: 250px;
+    height: 170px;
+    margin: 10px;
+    flex-shrink: 0;
+    box-shadow: 3px 3px 3px 3px gray;
+    padding: 15px;
+}
+.service i{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.service h3{
+    font-size: 20px;
+    color: rgb(45, 184, 126);
+    margin-block: 10px;
+}
+.service p{
+    font-size: 15px;
+    font-weight: 200;
+    color: gray;
+}
+
+/*..............................SPECIAL TOURS..............................*/
+
+.specialtour{
+    width: 100%;
+    height: 40vh;
+    margin-block: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.specialillu{
+    background: url(../images/ab4.jpg) no-repeat center/cover;
+    height: 100%;
+    width: 40%;
+}
+.specialcontent{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(235, 232, 232);
+    padding-left: 100px;
+    padding-right: 50px;
+}
+.specialcontent h3{
+    margin-top: 70px;
+    color: rgb(45, 184, 126);
+    margin-bottom: 20px;
+    font-family: 'JMH Sindbad', sans-serif;
+}
+.specialcontent p{
+    font-size: 16px;
+    color: rgb(104, 103, 103);
+}
+.greenborder{
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    border: 3px solid rgb(45, 184, 126);
+    width: 300px;
+    height: 150px;
+    margin: auto;
+}
+
+/*..............................GALLERY..............................*/
+
+#Gallery{
+    width: 60%;
+    height: 70vh;
+    overflow: hidden;
+    margin: auto;
+    margin-block: 100px;
+}
+#Gallery h4{
+    font-weight: 400;
+    text-align: center;
+    font-family: 'JMH Sindbad', sans-serif;
+}
+.gallery{
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+}
+.partitions{
+    width: 100%;
+    height: 100%;
+}
+.row1{
+    width: 100%;
+    height: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.row2{
+    width: 100%;
+    height: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.partition1 , .partition4{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.partition1 .part1{
+    width: 48%;
+    height: 100%;
+    background: url(../images/ab3.jpg) no-repeat center/cover;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.partition1 .part2{
+    width: 48%;
+    height: 100%;
+    background: url(../images/g5.jpg) no-repeat center/cover;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.partition4 .part1{
+    width: 48%;
+    height: 100%;
+    background: url(../images/g2.jpg) no-repeat center/cover;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.partition4 .part2{
+    width: 48%;
+    height: 100%;
+    background: url(../images/g3.jpg) no-repeat center/cover;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.partition3{
+    width: 48%;
+    height: 100%;
+    background: url(../images/ab4.jpg) no-repeat center/cover;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.partition2{
+    width: 48%;
+    height: 100%;
+    background: url(../images/g6.jpg) no-repeat center/cover;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.part1:hover , .part2:hover , .partition2:hover , .partition3:hover{
+    transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+}
+
+/*..............................GALLERY DETAILS..............................*/
+
+.gallerydetails{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+table{
+    height: 100%;
+}
+td{
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+.grayed{
+    background-color: rgb(235, 232, 232);
+}
+.backgrounded1{
+    background: url(../images/b4.jpg) no-repeat center/100% 100%;
+}
+.backgrounded2{
+    background: url(../images/g6.jpg) no-repeat center/100% 100%;
+}
+.gallerydetails h4 , .gallerydetails p{
+    font-size: 15px;
+    color: gray;
+}
+.gallerydetails p{
+    margin-top: 30px;
+}
+.gallerydetails h4 , .gallerydetails p , .gallerydetails h3 , button{
+    margin-left: 50px;
+
+}
+.gallerydetails h4{
+    position: absolute;
+    top: 50px;
+}
+.gallerydetails h3{
+    font-size: 25px;
+    color: rgb(45, 184, 126);
+    position: absolute;
+    top: 80px;
+}
+button{
+    position: absolute;
+    top: 180px;
+    color: white;
+    background-color: rgb(46, 46, 46);
+    border: none;
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+/*..............................BOOKING..............................*/
+
+#Booking{
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    margin-top: 100px;
+}
+#Booking h4{
+    font-weight: 400;
+    text-align: center;
+    font-family: 'JMH Sindbad', sans-serif;
+}
+.booking{
+    height: 90%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.book{
+    width: 23%;
+    position: relative;
+}
+.book img{
+    width: 100%;
+}
+.book i{
+    color: rgb(255, 196, 0);
+    font-size: 12px;
+}
+.book .starrate{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.bookdetails{
+    margin-top: 10px;
+}
+.bookdetails h3{
+    font-size: 17px;
+    color: rgb(255, 196, 0);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.bookdetails p{
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.bookprice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bookprice p{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(45, 184, 126);
+}
+.bookprice h5{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/*..............................BLOG..............................*/
+
+#Blog{
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+    margin-top: 50px;
+    background: url(../images/b4.jpg) no-repeat center/cover;
+}
+.join{
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+}
+.join h4{
+    font-weight: 600;
+    color: white;
+}
+.join h3{
+    margin-bottom: 30px;
+}
+.sub{
+    background-color: rgba(255, 255, 255, 0.445);
+    margin: auto;
+    width: 400px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.sub #email{
+    padding: 5px;
+    width: 200px;
+    height: 40px;
+}
+.sub .sendemail{
+    background-color: rgb(45, 184, 126);
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+}
+
+/*..............................CONTACT US..............................*/
+
+#Contacts{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    margin-top: 100px;
+}
+#Contacts h4{
+    font-weight: 400;
+    text-align: center;
+    font-family: 'JMH Sindbad', sans-serif;
+}
+.contactcontent{
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 220px;
+}
+iframe{
+    width: 49%;
+    height: 65%;
+}
+#contactform{
+    width: 49%;
+}
+.field{
+    height: 35px;
+    width: 200px;
+    border: 2px solid gray;
+    margin: 5px 7px;
+    padding: 10px;
+}
+#msg{
+    width: 420px;
+    resize: none;
+    margin-left: 7px;
+    margin-top: 5px;
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 2px solid gray;
+}
+.sendform{
+    margin-left: 7px;
+    border: none;
+    color: white;
+    background-color: rgb(45, 184, 126);
+    width: 420px;
+    height: 35px;
+}
+
+/*..............................FOOTER..............................*/
+
+footer{
+    width: 100%;
+}
+.upper{
+    background-color: rgb(66, 65, 65);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.uppercontent{
+    margin: auto;
+    text-align: center;
+}
+.uppercontent h4 , .uppercontent p{
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 15px;
+}
+.uppercontent p{
+    color: rgb(190, 190, 190);
+}
+.media{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 53px;
+}
+.faceback{
+    background-color: #3B5998;
+    width: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.twitback{
+    background-color: #00ACEE;
+    width: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.rotate{
+    background-color: orangered;
+    width: 25px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+}
+.media i{
+    margin: 5px;
+    text-align: center;
+}
+.animated{
+    color: white;
+    animation-name: uppwards;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+@keyframes uppwards {
+    from{
+        top: -10px;
+    }
+    to{
+        top: 10px;
+    }
+}
+.lower{
+    background-color: black;
+    padding-block: 10px;
+}
+.lower p{
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+@media screen and (min-width: 1920px) {
+    .headerstuff{
+        transform: translate(-25%,150%);
+        margin: auto;
+        text-align: center;
+        position: relative;
+        -webkit-transform: translate(-25%,150%);
+        -moz-transform: translate(-25%,150%);
+        -ms-transform: translate(-25%,150%);
+        -o-transform: translate(-25%,150%);
+}
+    .cards{
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .card{
+        width: 20%;
+        height: 100%;
+    }
+    #Services{
+        height: 50vh;
+    }
+    .bookdetails h3{
+        font-size: 17px;
+        color: rgb(255, 196, 0);
+        font-weight: 600;
+    }
+    .gallerydetails p{
+        margin-top: 0px;
+    }
+    .join{
+        margin-top: 120px;
+    }
+    .contactcontent{
+        width: 70%;
+        height: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 370px;
+    }
+}
